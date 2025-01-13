@@ -1,6 +1,6 @@
 # ZOMATO-DATA_INSIGHTS
 1. Overview of the Application:
-The application is a Food Delivery Management System built using Streamlit and a database (presumably MySQL or PostgreSQL). It allows users to manage customers, restaurants, orders, delivery persons, deliveries, and generate fake data for testing.
+The application is a Food Delivery Management System built using Streamlit and a database like MySQL. It allows users to manage customers, restaurants, orders, delivery persons, deliveries, and generate fake data for testing.
 
 2. Menu Navigation:
 The app's sidebar provides options to navigate between different sections of the system, such as "Manage Customers," "Manage Restaurants," "Manage Orders," "Generate Fake Data," and more.
