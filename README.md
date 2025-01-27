@@ -3,7 +3,7 @@
 The application is a Food Delivery Management System built using Streamlit and a database like MySQL. It allows users to manage customers, restaurants, orders, delivery persons, deliveries, and generate fake data for testing.
 
 2. Menu Navigation:
-The app's sidebar provides options to navigate between different sections of the system, such as "Manage Customers," "Manage Restaurants," "Manage Orders," "Generate Fake Data," and more.
+The app's sidebar provides options to navigate between different sections of the system, such as "Home", "Manage Customers," "Manage Restaurants," "Manage Orders", "Manage Delivery Persons", "Manage Deliveries", "Insights", "Data Exploration" and "Generate Fake Data".
 
 3. Streamlit Interface:
 Streamlit is used to create an interactive web application with components like st.selectbox, st.text_area, st.button, and st.write for rendering input fields, displaying information, and handling user actions.
