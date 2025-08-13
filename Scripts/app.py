@@ -7,10 +7,10 @@ import mysql.connector as db
 class FoodDeliveryManagementApp:
     def __init__(self):
         self.db_connection = db.connect(
-            host="localhost",
-            user="root",
-            password="SathishMyilsamy@21601",
-            database="zomato_db"
+            host=st.secrets["mysql"]["host"],
+            user=st.secrets["mysql"]["user"],
+            password=st.secrets["mysql"]["password"],
+            database=st.secrets["mysql"]["database"]
         )
         self.cursor = self.db_connection.cursor()
         self.fake = Faker()
@@ -928,4 +928,5 @@ def main():
             app.generate_fake_data()
 
 if __name__ == "__main__":
+
     main()
