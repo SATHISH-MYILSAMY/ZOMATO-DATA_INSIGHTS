@@ -7,7 +7,7 @@ import mysql.connector as db
 class FoodDeliveryManagementApp:
     def __init__(self):
         self.db_connection = db.connect(
-            host=st.secrets["mysql"]["host"],
+            # host=st.secrets["mysql"]["host"],
             user=st.secrets["mysql"]["user"],
             password=st.secrets["mysql"]["password"],
             database=st.secrets["mysql"]["database"]
@@ -930,3 +930,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
