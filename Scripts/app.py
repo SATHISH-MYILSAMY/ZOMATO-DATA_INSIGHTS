@@ -6,16 +6,11 @@ import mysql.connector as db
 
 class FoodDeliveryManagementApp:
     def __init__(self):
-        host = st.secrets["mysql"]["host"] if "mysql" in st.secrets else "localhost"
-        user = st.secrets["mysql"]["user"] if "mysql" in st.secrets else "root"
-        password = st.secrets["mysql"]["password"] if "mysql" in st.secrets else "SathishMyilsamy@21601"
-        database = st.secrets["mysql"]["database"] if "mysql" in st.secrets else "zomato_db"
-
         self.db_connection = db.connect(
-            host=host,
-            user=user,
-            password=password,
-            database=database
+            host="localhost",
+            user="root",
+            password="SathishMyilsamy@21601",
+            database="zomato_db"
         )
         self.cursor = self.db_connection.cursor()
         self.fake = Faker()
@@ -935,6 +930,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
