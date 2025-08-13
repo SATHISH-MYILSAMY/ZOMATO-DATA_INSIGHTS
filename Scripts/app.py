@@ -6,12 +6,12 @@ import mysql.connector as db
 
 class FoodDeliveryManagementApp:
     def __init__(self):
-        self.db_connection = db.connect(
-            # host=st.secrets["mysql"]["host"],
-            user=st.secrets["mysql"]["user"],
-            password=st.secrets["mysql"]["password"],
-            database=st.secrets["mysql"]["database"]
-        )
+        # self.db_connection = db.connect(
+        #     # host=st.secrets["mysql"]["host"],
+        #     user=st.secrets["mysql"]["user"],
+        #     password=st.secrets["mysql"]["password"],
+        #     database=st.secrets["mysql"]["database"]
+        # )
         self.cursor = self.db_connection.cursor()
         self.fake = Faker()
         self.create_tables()
@@ -930,4 +930,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
